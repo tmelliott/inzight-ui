@@ -1,0 +1,11 @@
+.header {
+    border-bottom: solid 1px lightgray;
+}
+.header .logo__container > a {
+    padding: 0 10px !important;
+    display: flex;
+    align-items: center;
+}
+.header .navlogo {
+    height: 40px;
+}

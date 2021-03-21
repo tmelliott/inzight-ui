@@ -1,0 +1,22 @@
+.data {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.data__group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.data__group > label {
+    padding: 0 10px;
+    /* width: 30%; */
+    /* text-align: right; */
+}
+.data__group > .rs-picker-input {
+    flex: 1;
+    margin-right: 10px;
+}
+.data__table {
+    margin-bottom: 10px;
+}

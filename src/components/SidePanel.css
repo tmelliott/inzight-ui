@@ -1,0 +1,9 @@
+.sidepanel {
+    /* flex: 1; */
+    background-color: #f6f6f6;
+    border-right: solid 1px lightgray;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}

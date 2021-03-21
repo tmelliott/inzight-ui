@@ -1,0 +1,20 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.control__row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.control__row > .rs-picker-input {
+    flex: 1;
+}
+
+.control__slider {
+    /* width: 100px;
+    background: pink;
+    height: 20px; */
+}
