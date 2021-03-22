@@ -13,7 +13,7 @@ const Controls = () => {
     ];
 
     const g1labels = ['a', 'b', 'c']
-    const { g1value } = 0
+    // const { g1value } = 0
 
 
     return (
