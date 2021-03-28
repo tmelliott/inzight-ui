@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Data.css"
 
 import { InputPicker, Radio, RadioGroup, Table } from 'rsuite';
@@ -7,10 +7,14 @@ const { Column, HeaderCell, Cell } = Table;
 
 
 const Data = () => {
+    const [dataset, setDataset] = useState('cas500')
+    const [dataview, setDataview] = useState('data')
+
     const datasets = [
         {label: "cas500", value: "cas500"},
         {label: "gapminder", value: "gapminder"},
     ]
+
     const data = [
         {
             id: 1,
@@ -30,10 +34,18 @@ const Data = () => {
         <div className="data">
             <div className="data__group">
                 <label>Dataset:</label>
-                <InputPicker value={ datasets[0].value } data={ datasets }
-                    cleanable={false}/>
+                <InputPicker
+                    value={ dataset }
+                    data={ datasets }
+                    cleanable={false}
+                    onChange={(v) => setDataset(v)}
+                    />
 
-                <RadioGroup name="dataDisplay" inline appearance="picker" defaultValue="data">
+                <RadioGroup name="dataDisplay" inline
+                    appearance="picker"
+                    value={dataview}
+                    onChange={(v) => setDataview(v)}
+                    >
                     <Radio value="data">Data</Radio>
                     <Radio value="variables">Variables</Radio>
                 </RadioGroup>

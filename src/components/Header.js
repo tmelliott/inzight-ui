@@ -21,7 +21,7 @@ export const Header = () => {
                     </Nav>
                     <Nav pullRight>
                         <Nav.Item className="logo__container">
-                            <img src={logo} alt="" class="navlogo"/>
+                            <img src={logo} alt="" className="navlogo"/>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Body>

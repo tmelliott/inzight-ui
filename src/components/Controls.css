@@ -14,7 +14,27 @@
 }
 
 .control__slider {
-    /* width: 100px;
-    background: pink;
-    height: 20px; */
+    /* width: 100p; */
+    /* background: pink; */
+    padding: 1em;
+    /* height: 20px; */
 }
+
+.control__slider > .slider {
+    width: 100%;
+}
+.control__slider .slider__handle {
+    /* color: white; */
+    /* text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    width: 50px;
+    height: 22px;
+    background-color: pink;
+    padding: 3px;
+    margin-left: -16px;
+    top: -6px; */
+}
+/* .control__slider .slider__handle:before {
+    display: none;
+} */
